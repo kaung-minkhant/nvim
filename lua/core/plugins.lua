@@ -58,11 +58,11 @@ return packer.startup(function(use)
     'windwp/nvim-autopairs',
   }
   use 'numToStr/Comment.nvim'
-  -- use 'tpope/vim-commentary'
   use {
     'JoosepAlviste/nvim-ts-context-commentstring',
   }
   use 'lewis6991/gitsigns.nvim'
+  use 'akinsho/toggleterm.nvim'
 
   -- colorscheme plugins
   use 'lunarvim/colorschemes'
@@ -90,6 +90,9 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'b0o/schemastore.nvim'
   use 'ii14/emmylua-nvim'
+  
+  -- formatter
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

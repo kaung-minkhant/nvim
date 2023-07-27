@@ -93,6 +93,10 @@ M.telescopeMaps = {
       },
 }
 
+keymap('n', '<leader>f', '<cmd>Telescope find_files<cr>', opts)
+keymap('n', '<leader>g', '<cmd>Telescope live_grep<cr>', opts)
+keymap('n', '<leader>m', '<cmd>Telescope media_files<cr>', opts)
+
 M.lspHandlersMaps = function(bufnr)
   local api = vim.api
   api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
@@ -105,12 +109,13 @@ M.lspHandlersMaps = function(bufnr)
   api.nvim_buf_set_keymap(bufnr, 'n', 'gl', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
   api.nvim_buf_set_keymap(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_prev({border="rounded"})<CR>', opts)
   api.nvim_buf_set_keymap(bufnr, 'n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
-  vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
+vim.cmd [[ command! Format execute 'lua vim.lsp.buf.format()' ]]
 
 keymap('n', '<leader>p', ':TSPlaygroundToggle<cr>', opts)
 
+keymap('n', 'F', ':Format<cr>', opts)
 
 -----------------------------------------------------------------------------------
 
@@ -127,7 +132,7 @@ keymap("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", opts)
 
 -- move text
 vim.cmd([[
-  nnoremap <A-k> :m .-2<CR>==
+nnoremap <A-k> :m .-2<CR>==
   nnoremap <A-j> :m .+1<CR>==
 ]])
 
@@ -163,10 +168,6 @@ keymap('t', '<c-l>', '<C-\\><C-N><C-w>l', term_opts)
 
 
 
--- telescope
-keymap('n', '<leader>f', '<cmd>Telescope find_files<cr>', opts)
-keymap('n', '<leader>g', '<cmd>Telescope live_grep<cr>', opts)
-keymap('n', '<leader>m', '<cmd>Telescope media_files<cr>', opts)
 
 
 -- extra utils

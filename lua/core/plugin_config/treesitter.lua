@@ -16,12 +16,7 @@ treesitterConfigs.setup{
   indent = { enable = true, disable = { 'yaml' } },
   rainbow = {
     enable = true,
-    disable = { '' },
-    --[[ strategy = require('ts-rainbow').strategy.global, ]]
-    --[[ extended_mode = true, ]]
-    --[[ max_file_lines = nil, ]]
-    -- colors = {} ]]
-    -- termcolors = {} ]]
+    disable = { 'javascript' },
   },
   playground = {
     enable = true,

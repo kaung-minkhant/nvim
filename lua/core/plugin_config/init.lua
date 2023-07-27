@@ -15,3 +15,5 @@ require("core.plugin_config.treesitter")
 require("core.plugin_config.auto-pairs")
 require("core.plugin_config.comment")
 require("core.plugin_config.gitsigns")
+require("core.plugin_config.toggleterm")
+
