@@ -13,6 +13,7 @@ null_ls.setup({
     formatting.black.with { extra_args = { '--fast' } },
     formatting.stylua,
     formatting.emacs_vhdl_mode,
+    --[[ formatting.latexindent, ]]
     diagnostics.flake8,
   },
 })
