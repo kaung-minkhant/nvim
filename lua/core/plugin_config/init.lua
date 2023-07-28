@@ -18,4 +18,4 @@ require("core.plugin_config.gitsigns")
 require("core.plugin_config.toggleterm")
 require("core.plugin_config.lualine")
 require("core.plugin_config.ts-autotag")
-require("core.plugin_config.pretty-fold")
+--[[ require("core.plugin_config.pretty-fold") ]]
