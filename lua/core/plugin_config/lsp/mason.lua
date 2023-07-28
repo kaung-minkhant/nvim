@@ -1,7 +1,9 @@
 local servers = {
   'lua_ls',
 --  'jsonls',
+  'texlab',
   'pyright',
+  'tsserver',
 }
 
 local settings = {

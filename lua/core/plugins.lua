@@ -56,6 +56,7 @@ return packer.startup(function(use)
   use 'nvim-treesitter/playground'
   use {
     'windwp/nvim-autopairs',
+    'windwp/nvim-ts-autotag'
   }
   use 'numToStr/Comment.nvim'
   use {
@@ -63,6 +64,7 @@ return packer.startup(function(use)
   }
   use 'lewis6991/gitsigns.nvim'
   use 'akinsho/toggleterm.nvim'
+  use 'nvim-lualine/lualine.nvim'
 
   -- colorscheme plugins
   use 'lunarvim/colorschemes'
