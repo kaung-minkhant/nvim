@@ -65,8 +65,8 @@ return packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'akinsho/toggleterm.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use 'anuvyklack/pretty-fold.nvim'
-  use 'pierreglaser/folding-nvim'
+  use 'kevinhwang91/nvim-ufo'
+  use 'kevinhwang91/promise-async'
 
   -- colorscheme plugins
   use 'lunarvim/colorschemes'

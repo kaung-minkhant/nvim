@@ -24,9 +24,7 @@ treesitterConfigs.setup{
   autopairs = {
     enable = true,
   },
-  autotag = {
-    enable = true,
-  },
+  autotag = {},
   context_commentstring = {
     enable = true,
     enable_autocmd = false, 

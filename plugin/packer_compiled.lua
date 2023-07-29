@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/emmylua-nvim",
     url = "https://github.com/ii14/emmylua-nvim"
   },
-  ["folding-nvim"] = {
-    loaded = true,
-    path = "/home/polar/.local/share/nvim/site/pack/packer/start/folding-nvim",
-    url = "https://github.com/pierreglaser/folding-nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -202,6 +197,11 @@ _G.packer_plugins = {
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow2",
     url = "https://github.com/HiPhish/nvim-ts-rainbow2"
   },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "/home/polar/.local/share/nvim/site/pack/packer/start/nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -227,10 +227,10 @@ _G.packer_plugins = {
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["pretty-fold.nvim"] = {
+  ["promise-async"] = {
     loaded = true,
-    path = "/home/polar/.local/share/nvim/site/pack/packer/start/pretty-fold.nvim",
-    url = "https://github.com/anuvyklack/pretty-fold.nvim"
+    path = "/home/polar/.local/share/nvim/site/pack/packer/start/promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
   },
   ["schemastore.nvim"] = {
     loaded = true,

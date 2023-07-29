@@ -16,6 +16,11 @@ if not tele_action_status_ok then
   return
 end
 
+local fold_ufo_status_ok, ufo = pcall(require, 'ufo')
+if not fold_ufo_status_ok then
+  return
+end
+
 -------------------------------------------------------------------------------
 
 local opts = { noremap = true, silent = true}
@@ -116,6 +121,11 @@ vim.cmd [[ command! Format execute 'lua vim.lsp.buf.format()' ]]
 keymap('n', '<leader>p', ':TSPlaygroundToggle<cr>', opts)
 
 keymap('n', 'F', ':Format<cr>', opts)
+
+vim.keymap.set('n', 'foa', ufo.openAllFolds)
+vim.keymap.set('n', 'fca', ufo.closeAllFolds)
+keymap('n', 'fo', 'zo', opts)
+keymap('n', 'fc', 'zfj', opts)
 
 -----------------------------------------------------------------------------------
 
