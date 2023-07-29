@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/emmylua-nvim",
     url = "https://github.com/ii14/emmylua-nvim"
   },
+  ["folding-nvim"] = {
+    loaded = true,
+    path = "/home/polar/.local/share/nvim/site/pack/packer/start/folding-nvim",
+    url = "https://github.com/pierreglaser/folding-nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/polar/.local/share/nvim/site/pack/packer/start/friendly-snippets",

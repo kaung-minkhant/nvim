@@ -66,6 +66,7 @@ return packer.startup(function(use)
   use 'akinsho/toggleterm.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'anuvyklack/pretty-fold.nvim'
+  use 'pierreglaser/folding-nvim'
 
   -- colorscheme plugins
   use 'lunarvim/colorschemes'
